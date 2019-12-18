@@ -60,7 +60,6 @@ npm test
 
 ## Changelog
 
-### v0.1
+### v0.x
 
 - Initial version
-
