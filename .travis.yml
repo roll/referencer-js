@@ -20,6 +20,7 @@ jobs:
       if: tag IS present
       node_js: 12
       deploy:
+        edge: true
         provider: npm
         email: eskarev@gmail.com
         skip_cleanup: true
