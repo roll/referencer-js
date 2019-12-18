@@ -1,0 +1,51 @@
+{
+  "name": "referencer",
+  "version": "0.1.0",
+  "description": "Generate a markdown reference from your public API jsdocs and add it to your readme.",
+  "main": "lib/index.js",
+  "author": "Evgeny Karev",
+  "homepage": "https://github.com/roll/referencer-js",
+  "license": "MIT",
+  "scripts": {
+    "coverage": "sensible-browser coverage/index.html",
+    "format": "prettier --write lib/**/*.js && standardx --fix lib/**/*.js",
+    "lint": "prettier --check lib/**/*.js && standardx lib/**/*.js",
+    "pretest": "npm run lint",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "commander": "^4.0.1",
+    "jsdoc-to-markdown": "^5.0.3"
+  },
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "standardx": "^5.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "standardx": {
+    "env": "jest"
+  },
+  "eslintConfig": {
+    "rules": {
+      "space-before-function-paren": "off"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roll/referencer-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roll/referencer-js/issues"
+  }
+}
