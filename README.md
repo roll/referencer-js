@@ -27,6 +27,28 @@ referencer package README.md --in-place
 
 ## API Reference
 
+### cli
+Command-line interface
+
+```
+Usage: cli [options] <package> <document>
+
+Options:
+ --in-place                             Output as JSON
+ --package-pattern <package-pattern>    Package pattern (default: "const { (\w+) } = require\('\.\/(\w+)'\)")
+ --document-section <document-section>  Document section (default: "## API Reference")
+ -h, --help                             output usage information
+```
+
+
+### generateDocument()
+Generate document
+
+
+### generateReference()
+Generate reference
+
+
 ## Contributing
 
 ```bash
