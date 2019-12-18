@@ -11,6 +11,7 @@
   },
   "scripts": {
     "coverage": "sensible-browser coverage/index.html",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "format": "prettier --write lib/**/*.js && standardx --fix lib/**/*.js",
     "lint": "prettier --check lib/**/*.js && standardx lib/**/*.js",
     "pretest": "npm run lint",
