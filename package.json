@@ -1,6 +1,6 @@
 {
   "name": "referencer",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Generate a markdown reference from your public API jsdocs and add it to your readme.",
   "main": "lib/index.js",
   "author": "Evgeny Karev",
