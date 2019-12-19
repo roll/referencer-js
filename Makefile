@@ -11,7 +11,7 @@ list:
 	@grep '^\.PHONY' Makefile | cut -d' ' -f2- | tr ' ' '\n'
 
 readme:
-	referencer lib README.md --in-place
+	node lib/main.js lib README.md --in-place
 
 release:
 	git checkout master && git pull origin && git fetch -p && git diff
